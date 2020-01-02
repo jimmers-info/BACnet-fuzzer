@@ -1,5 +1,4 @@
-# VDA Labs BACnet Fuzzer
-#!/usr/bin/env python
+#!/usr/bin/python
 from boofuzz import *
 import boofuzz.instrumentation
 import os
@@ -15,7 +14,7 @@ def target_alive():
         return False
 
 def reset_target():
-    print "Stopping target\n"
+    print("Stopping target\n")
     time.sleep(10)
     return True
 
